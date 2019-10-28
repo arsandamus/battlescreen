@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import Player from './components/Player'
+import Enemy from './components/Enemy'
+import Dragon from './components/Dragon.gif'
+import Command from './components/Commands'
+import Dialog from './components/Dialog'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  render() {
+    return (
+      <div className="App">
+       <div className='game-area'>
+         <div className='status-area'>
+            <Player />
+            <Enemy name={'Dragon'}/>
+         </div>
+         <div className='dragon-area'>
+            <Command />
+            <img className='dragon' src={Dragon} alt='Dragon'></img>
+         </div>
+         <div className='dialog-area'>
+            <Dialog/>
+         </div>
+       </div>
+      </div>
+    );
+
+  }
+  
 }
 
 export default App;
