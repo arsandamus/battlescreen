@@ -12,6 +12,11 @@ h3 {
   font-family: 'Press Start 2P';
 }
 
+p {
+  font-family: 'Press Start 2P';
+  text-align: center;
+}
+
 
 .game-area{
   
@@ -25,7 +30,7 @@ h3 {
   background-image: url('./components/background.jpg');
 }
 
-.status-area {
+.enemystatus-area {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -33,7 +38,7 @@ h3 {
   font-family: 'Press Start 2P';
 }
 
-.dragon-area {
+.playerstatus-area {
   width: 100%;
   height: auto;
   display: flex;
@@ -45,8 +50,9 @@ h3 {
   width: 300px;
 }
 
-.dialog-area {
-  display: flex;
-  justify-content: flex-start;
-  
+
+.avatar {
+  width: 400px;
+  height: 400px;
+
 }
