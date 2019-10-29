@@ -3,7 +3,7 @@ import './Dialog.css';
 
 class Dialog extends React.Component {
     state = {
-        text: 'A  wild dragon appears !!'
+        text: 'A  wild meta appears !!'
     }
 
 

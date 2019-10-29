@@ -1,10 +1,12 @@
 .enemy-area {
-    width: 45%;
-    height: 100px;
+    width: 300px;
+    height: 110px;
     background-color: gray;
     opacity: 0.8;
     overflow: hidden;
     border: 2px solid black;
-    margin: 20px;
+    margin-top: 10px;
+    margin-right: 30px;
+
     
 }
